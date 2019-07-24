@@ -3,7 +3,7 @@ A tiny git repository puller using GitHub webhooks
 
 ## Motivation
 
-I made this because I didn't want to run an entire jenkins instance or give someone access to my machine. I'm pretty proud of it as it is the first non-academic thing I wrote to solve a problem for myself. 
+I made this because I didn't want to run an entire jenkins instance to upload my blog or give someone access to my machine/manually log in and pull the changes. I'm pretty proud of it as it is the first non-academic thing I wrote to solve a problem for myself. 
 
 ## Configuration
 
@@ -11,4 +11,8 @@ First thing you need to do, is set up webhooks for your GitHub or GitLab repo, a
 
 ## Contributions
 
-If you want to help clean my code up, I would greatly appreciate it
+If you want to help clean my code up, I would greatly appreciate it.
+
+## Questions? 
+
+Leave an issue or reach me on Freenode. I go by AndroidKitKat there.
