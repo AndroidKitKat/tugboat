@@ -1,0 +1,8 @@
+title = "tugboat config"
+
+[connection]            #connection information
+address = "127.0.0.1"   #address to bind to
+port = 7846             #port to listen on
+url = "example.com"     #base url
+
+[repos] #todo
