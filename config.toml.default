@@ -1,8 +1,17 @@
 title = "tugboat config"
 
-[connection]            #connection information
-address = "127.0.0.1"   #address to bind to
-port = 7846             #port to listen on
-url = "example.com"     #base url
+[connection]                        #connection information
+address = "127.0.0.1" #address to bind to
+port = 7846         #port to listen on
 
-[repos] #todo
+
+#THESE MUST BE THE SAME SIZE OR THINGS WON'T WORK, also correspond them right
+
+[repos]
+repo_names = [
+    #repo1name (FORMAT THIS JUST LIKE HOW GITHUB HAS THE NAME)
+]
+
+repo_paths = [
+    #repo1path (ABSOLUTE OR RELATIVE PATH WORKS)
+]
