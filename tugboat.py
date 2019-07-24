@@ -2,6 +2,7 @@
 
 import tornado.ioloop
 import tornado.web
+import tornado.options
 import logging
 import json
 import toml
@@ -13,8 +14,7 @@ class MainHandler(tornado.web.RequestHandler):
         self.logger.setLevel(logging.INFO)
 
     def post(self):
-        self.logger.info('test')
-        self.write("hi!")
+        self.logger.info(self.request.arguments)
 
 def set_sail():
     return tornado.web.Application([
@@ -34,7 +34,14 @@ def load_config(config_name='config.toml'):
 
 if __name__ == "__main__":
     config = load_config()
-    print(config)
-    # boat = set_sail()
-    # boat.listen(8888)
-    # tornado.ioloop.IOLoop.current().start()
+    port = config['connection']['port']
+    address = config['connection']['address']
+
+    boat = set_sail()
+    try:
+        boat.listen(port, address)
+        print('Bound to {} on port {}'.format(address, port))
+    except:
+        print('Could not bind to {} on port {}'.format(address, port))
+        exit(1)
+    tornado.ioloop.IOLoop.current().start()
