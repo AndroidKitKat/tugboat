@@ -9,10 +9,6 @@ I made this because I didn't want to run an entire jenkins instance to upload my
 
 First thing you need to do, is set up webhooks for your GitHub or GitLab repo, and point them to the endpoint running tugboat. Then, just put your repo names and paths into the repo_names and repo_paths arrays. Next, just do a push and voila!
 
-## Contributions
-
-If you want to help clean my code up, I would greatly appreciate it.
-
 ## Questions? 
 
 Leave an issue or reach me on Freenode. I go by AndroidKitKat there.
