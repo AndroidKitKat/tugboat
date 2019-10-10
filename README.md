@@ -11,4 +11,4 @@ First thing you need to do, is set up webhooks for your GitHub or GitLab repo, a
 
 ## Questions? 
 
-Leave an issue or reach me on Freenode. I go by AndroidKitKat there.
+Please leave an issue or reach me on Freenode. I go by AndroidKitKat there.
